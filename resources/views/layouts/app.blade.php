@@ -61,7 +61,11 @@
                                         {{ __('Logout') }}
                                     </a>
                                     <a class="dropdown-item" href="{{ route('about') }}">
-                                        Profile
+                                        About
+
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('contact') }}">
+                                        Contact
 
                                     </a>
 

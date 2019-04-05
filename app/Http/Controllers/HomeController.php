@@ -31,7 +31,12 @@ class HomeController extends Controller
     {
         //$users = User::all();
         $user=Auth::user();
-        $posts=$user->posts;
-        return view('about', ['posts' => $posts]);
+        return view('about', ['User' => $user]);
+    }
+    public function contact()
+    {
+        //$users = User::all();
+        $user=Auth::user();
+        return view('contact', ['User' => $user]);
     }
 }
