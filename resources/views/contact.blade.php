@@ -7,8 +7,6 @@
             <p class="lead">Use this to contact the site owner.</p>
         </div>
         <div class="card-body">
-            <form role="form" id="contact-form" action="{{route('contact.store')}}" method="post" class="contact-form">
-                {{csrf_field()}}
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input name="name" type="name" class="form-control" id="name" placeholder="name">
@@ -23,7 +21,7 @@
                     <textarea name="body" class="form-control" id="body" rows="3"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary mb-2">Submit</button>
-            </form>
+
         </div>
     </div>
 @endsection

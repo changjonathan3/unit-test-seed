@@ -16,8 +16,8 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/about', 'HomeController@about')->name('about');
 Route::get('/contact', 'HomeController@contact')->name('contact');
-Route::post('/contact', 'HomeController@store')->name('contact.store');
-Route::get('/thanks/{name}', 'HomeController@thanks')->name('thanks');
+
 
