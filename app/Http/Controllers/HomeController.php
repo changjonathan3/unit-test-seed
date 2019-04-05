@@ -29,14 +29,19 @@ class HomeController extends Controller
     }
     public function about()
     {
-        //$users = User::all();
         $user=Auth::user();
         return view('about', ['User' => $user]);
     }
     public function contact()
     {
-        //$users = User::all();
-        $user=Auth::user();
-        return view('contact', ['User' => $user]);
+        return view('contact');
+    }
+
+    function store(Request $request){
+        $name = $request->name;
+        return redirect()->route('thanks', ['name' => $name]);
+    }
+    function thanks($name, Request $request){
+        return view('thankyou')->with(compact('name'));
     }
 }

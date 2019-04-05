@@ -14,8 +14,8 @@
                             </div>
                         @endif
 
-                        About page
-
+                        About page.
+                        Hello, welcome to MP2 by Jonathan Chang
                     </div>
                 </div>
             </div>
